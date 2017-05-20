@@ -89,12 +89,9 @@ public class playerMovement : MonoBehaviour {
     float x = Input.GetAxis("Horizontal") * Time.deltaTime * turnSpeed;
     float z = animationSpeed * Time.deltaTime;
     float speedMulti = 1f;
-    if (animationSpeed < 3) {
-      speedMulti = 0.5f;
-    } else if (animationSpeed > 5) {
+
+    if (animationSpeed > 10) {
       speedMulti = 2f;
-    } else if (animationSpeed > 10) {
-      speedMulti = 3f;
     }
 
     animator.SetFloat("speed", animationSpeed);
