@@ -37,8 +37,10 @@ public class playerMovement : MonoBehaviour {
   private Boolean increaseJumpActive;
   private Boolean poisonActive;
   private Boolean underAttack;
+  private float points;
 
 	void Start () {
+    points = 0f;
     underAttack = false;
     speedUpActive = false;
     slowDownActive = false;
@@ -55,9 +57,12 @@ public class playerMovement : MonoBehaviour {
 	void Update () {
     checkPowerUps();
 
-    healthText.text = currentHealth.ToString();
+    points += Time.deltaTime;
+
+    healthText.text = "Score: " + points.ToString();
 
     if (currentHealth <= 0) {
+      ApplicationData.score = this.points;
       SceneManager.LoadScene(1);
     }
 
@@ -152,6 +157,10 @@ public class playerMovement : MonoBehaviour {
     }
 
     mainLight.spotAngle = 179 / (maxHealth / healthValue);
+  }
+
+  public void addPoints(float pointsToAdd) {
+    this.points += pointsToAdd;
   }
 
 	private Boolean isGrounded() {
