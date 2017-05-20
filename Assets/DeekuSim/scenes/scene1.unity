@@ -241,6 +241,26 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114808429662105270, guid: 15a8e4a8cab4640a68db9deb8144e029,
+        type: 2}
+      propertyPath: spawnAttemptMinDelay
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114808429662105270, guid: 15a8e4a8cab4640a68db9deb8144e029,
+        type: 2}
+      propertyPath: spawnAttemptMaxDelay
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 114808429662105270, guid: 15a8e4a8cab4640a68db9deb8144e029,
+        type: 2}
+      propertyPath: spawnMinDistance
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114808429662105270, guid: 15a8e4a8cab4640a68db9deb8144e029,
+        type: 2}
+      propertyPath: spawnMaxDistance
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 15a8e4a8cab4640a68db9deb8144e029, type: 2}
   m_IsPrefabParent: 0
