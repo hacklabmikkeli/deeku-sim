@@ -17,13 +17,12 @@ public class playerMovement : MonoBehaviour {
   public float crippledThreshold;
   public AudioSource hurtAudioSource;
 
-  private Animation anim;
   private Rigidbody rb;
   private Text healthText;
   private Light mainLight;
+  private Animator animator;
 
 	private Boolean doubleJumped = false;
-	private Boolean jumping = false;
   private int currentHealth;
   private float timeSinceHealthLastUpdated;
   private float timeSinceTakenDamage;
@@ -48,8 +47,8 @@ public class playerMovement : MonoBehaviour {
     increaseJumpActive = false;
     poisonActive = false;
 
+    animator = gameObject.GetComponent("Animator") as Animator;
     mainLight = GameObject.FindGameObjectWithTag("valo").GetComponent ("Light") as Light;
-		anim = gameObject.GetComponent("Animation") as Animation;
 		rb = gameObject.GetComponent("Rigidbody") as Rigidbody;
     healthText = GameObject.FindGameObjectWithTag("healthText").GetComponent("Text") as Text;
     currentHealth = maxHealth;
@@ -77,37 +76,29 @@ public class playerMovement : MonoBehaviour {
 
 		if (isGrounded ()) {
 		  doubleJumped = false;
-		  jumping = false;
 		}
 
 		if (Input.GetButtonDown ("Jump") && (isGrounded() || doubleJumped == false)) {
-			if (!jumping) {
-				anim.Stop ("run");
-				anim.Stop ("idle");
-				anim.GetClip ("jump").wrapMode = WrapMode.Once;
-				anim.Play ("jump");
-			}
-			jumping = true;
 			if (!isGrounded () && doubleJumped == false) {
 				doubleJumped = true;
 			}
       rb.AddForce (new Vector3 (0, getJumpForce(), 0));
 		}
 
-
-		if (jumping == false && isGrounded ()) {
-			if (Input.GetAxis ("Vertical") > 0.2) {
-				anim.CrossFade ("run");
-			} else {
-				anim.CrossFade ("idle");
-			}
-		} else {
-			anim.Stop ("run");
-			anim.Stop ("idle");
-		}
-
+    float animationSpeed = Input.GetAxis("Vertical") * getRunSpeed();
     float x = Input.GetAxis("Horizontal") * Time.deltaTime * turnSpeed;
-    float z = Input.GetAxis ("Vertical") * Time.deltaTime * getRunSpeed();
+    float z = animationSpeed * Time.deltaTime;
+    float speedMulti = 1f;
+    if (animationSpeed < 3) {
+      speedMulti = 0.5f;
+    } else if (animationSpeed > 5) {
+      speedMulti = 2f;
+    } else if (animationSpeed > 10) {
+      speedMulti = 3f;
+    }
+
+    animator.SetFloat("speed", animationSpeed);
+    animator.SetFloat("speedMulti", speedMulti);
 
 		transform.Rotate(0, x, 0);
 		transform.Translate(0, 0, z);
