@@ -7,6 +7,7 @@ TagManager:
   - healthText
   - player
   - valo
+  - score
   layers:
   - Default
   - TransparentFX

@@ -392,6 +392,7 @@ GameObject:
   - component: {fileID: 114288520224212126}
   - component: {fileID: 114808429662105270}
   - component: {fileID: 114970542874324294}
+  - component: {fileID: 82844757345225788}
   m_Layer: 0
   m_Name: player
   m_TagString: player
@@ -1942,6 +1943,86 @@ AudioListener:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1421667419717638}
   m_Enabled: 1
+--- !u!82 &82844757345225788
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1422427746426140}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 54efdb22487f14279acc7fac88d4d89b, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 256
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!92 &92765264856835240
 Behaviour:
   m_ObjectHideFlags: 1
@@ -2057,9 +2138,9 @@ MonoBehaviour:
   - {fileID: 4128159140251608, guid: 660ff78ccfc034e778a14c6459d24b72, type: 2}
   - {fileID: 4128159140251608, guid: da7bacb07916d41f9b791eea2d584684, type: 2}
   - {fileID: 4128159140251608, guid: 6a6333ce40f914dbfb71a8d764d3d9a4, type: 2}
-  spawnProbability: 90
-  spawnAttemptMinDelay: 100
-  spawnAttemptMaxDelay: 200
+  spawnProbability: 50
+  spawnAttemptMinDelay: 200
+  spawnAttemptMaxDelay: 800
   spawnMinDistance: 15
   spawnMaxDistance: 25
 --- !u!114 &114970542874324294

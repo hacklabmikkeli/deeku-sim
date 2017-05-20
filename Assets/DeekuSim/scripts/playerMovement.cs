@@ -62,7 +62,6 @@ public class playerMovement : MonoBehaviour {
     healthText.text = "Score: " + points.ToString();
 
     if (currentHealth <= 0) {
-      ApplicationData.score = this.points;
       SceneManager.LoadScene(1);
     }
 

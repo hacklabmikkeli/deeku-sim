@@ -9,6 +9,5 @@ public class endingHandler : MonoBehaviour {
   public Text scoreText;
 
 	void Start () {
-    scoreText.text = "You gots " + ApplicationData.score.ToString() + " points.";
 	}
 }
