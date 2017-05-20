@@ -10,23 +10,37 @@ ModelImporter:
     100004: Cylinder
     100006: //RootNode
     100008: Plane
+    100010: Camera
+    100012: kampittaja
+    100014: silopram
     400000: Cube
     400002: Cube.001
     400004: Cylinder
     400006: //RootNode
     400008: Plane
+    400010: Camera
+    400012: kampittaja
+    400014: silopram
     2300000: Cube
     2300002: Cube.001
     2300004: Cylinder
     2300006: Plane
+    2300008: kampittaja
+    2300010: silopram
+    2300012: //RootNode
     3300000: Cube
     3300002: Cube.001
     3300004: Cylinder
     3300006: Plane
+    3300008: kampittaja
+    3300010: silopram
+    3300012: //RootNode
     4300000: Cylinder
     4300002: Cube.001
     4300004: Plane
     4300006: Cube
+    4300008: silopram
+    4300010: kampittaja
   materials:
     importMaterials: 1
     materialName: 0
