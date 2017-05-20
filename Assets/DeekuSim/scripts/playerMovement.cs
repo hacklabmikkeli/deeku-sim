@@ -15,6 +15,7 @@ public class playerMovement : MonoBehaviour {
   public float powerUpDelay;
   public float damageDelay;
   public float crippledThreshold;
+  public AudioSource hurtAudioSource;
 
   private Animation anim;
   private Rigidbody rb;
@@ -141,6 +142,7 @@ public class playerMovement : MonoBehaviour {
 
   public void startDamage() {
     this.currentHealth -= 10;
+    hurtAudioSource.Play();
     this.underAttack = true;
     timeSinceTakenDamage = 0f;
   }
@@ -171,6 +173,7 @@ public class playerMovement : MonoBehaviour {
       if (timeSinceTakenDamage + Time.deltaTime * 1000f > damageDelay) {
         timeSinceTakenDamage = 0f;
         this.currentHealth -= 10;
+        hurtAudioSource.Play();
       } else {
         timeSinceTakenDamage += Time.deltaTime * 1000f;
       }
