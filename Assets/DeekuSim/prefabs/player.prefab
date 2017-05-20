@@ -2320,8 +2320,8 @@ MonoBehaviour:
   runSpeed: 5
   turnSpeed: 400
   maxHealth: 100
-  healthDecreaseInterval: 200
-  powerUpDelay: 2000
+  healthDecreaseInterval: 750
+  powerUpDelay: 3900
   damageDelay: 1000
   crippledThreshold: 25
   hurtAudioSource: {fileID: 82382953525269960}
