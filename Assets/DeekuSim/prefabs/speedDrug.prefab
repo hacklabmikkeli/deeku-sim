@@ -204,3 +204,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   drugEffect: 1
   useAudio: {fileID: 82260227365447376}
+  drugPoints: 3

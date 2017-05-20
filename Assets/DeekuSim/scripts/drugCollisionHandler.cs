@@ -14,10 +14,12 @@ public class drugCollisionHandler : MonoBehaviour {
 
   public DrugEffect drugEffect;
   public AudioSource useAudio;
+  public float drugPoints;
 
   void OnCollisionEnter (Collision col) {
     if(col.gameObject.tag == "player") {
       playerMovement player = col.gameObject.GetComponent ("playerMovement") as playerMovement;
+      player.addPoints(drugPoints);
       switch (drugEffect) {
         case DrugEffect.HEAL:
           player.heal ();
