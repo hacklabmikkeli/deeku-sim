@@ -443,8 +443,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83af65390fadc4d28b3d281d5a5fb2b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextLevel: 0
+  nextLevel: 1
   fadeInSpeed: 0.5
+  fullLogoDelay: 2000
 --- !u!1 &817385245
 GameObject:
   m_ObjectHideFlags: 0
