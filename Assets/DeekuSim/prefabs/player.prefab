@@ -2325,6 +2325,7 @@ MonoBehaviour:
   damageDelay: 1000
   crippledThreshold: 25
   hurtAudioSource: {fileID: 82382953525269960}
+  nextLevel: 2
 --- !u!114 &114757673077519464
 MonoBehaviour:
   m_ObjectHideFlags: 1

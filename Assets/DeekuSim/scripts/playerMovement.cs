@@ -16,6 +16,7 @@ public class playerMovement : MonoBehaviour {
   public float damageDelay;
   public float crippledThreshold;
   public AudioSource hurtAudioSource;
+  public int nextLevel;
 
   private Rigidbody rb;
   private Text healthText;
@@ -62,7 +63,8 @@ public class playerMovement : MonoBehaviour {
     healthText.text = "Score: " + points.ToString();
 
     if (currentHealth <= 0) {
-      SceneManager.LoadScene(2);
+      DeekuSimData.playerScore = points;
+      SceneManager.LoadScene(nextLevel);
     }
 
     if (timeSinceHealthLastUpdated >= getHealthDecreaseInterval()) {
