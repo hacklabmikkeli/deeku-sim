@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 19339622}
   - component: {fileID: 3335006}
   - component: {fileID: 2346822}
-  - component: {fileID: 136781661169501404}
+  - component: {fileID: 136929660707063544}
   m_Layer: 0
   m_Name: Tree9_3
   m_TagString: Untagged
@@ -26,8 +26,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 114418}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 29.74253, y: 0.053816855, z: 11.610564}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalPosition: {x: 274.08658, y: 2.9775307, z: 111.88639}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -43,26 +43,26 @@ Material:
   m_ShaderKeywords: 
   m_LightmapFlags: 5
   m_EnableInstancingVariants: 0
-  m_CustomRenderQueue: -1
+  m_CustomRenderQueue: 2000
   stringTagMap: {}
   disabledShaderPasses: []
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
     - _BumpSpecMap:
-        m_Texture: {fileID: 2800000, guid: 18e6751e2abfa23428ef946f6df94e68, type: 3}
+        m_Texture: {fileID: 2800000, guid: 34bf97c9a44d6a24e9aad37f9f1e5e3d, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: a7e4e66633823a845850fb5c7575e318, type: 3}
+        m_Texture: {fileID: 2800000, guid: f984fae445e929149af21237b556579a, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ShadowTex:
-        m_Texture: {fileID: 2800000, guid: 75f55b158d49ca947ac0944f21013eff, type: 3}
+        m_Texture: {fileID: 2800000, guid: c6866b951b8f3da479d9f8822255ff51, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _TranslucencyMap:
-        m_Texture: {fileID: 2800000, guid: 4ce39a37c76b0f341a59318bafcf0cdc, type: 3}
+        m_Texture: {fileID: 2800000, guid: f61dbef0d12d35f4b9fbf8cfded48f9a, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
@@ -87,22 +87,22 @@ Material:
   m_ShaderKeywords: 
   m_LightmapFlags: 5
   m_EnableInstancingVariants: 0
-  m_CustomRenderQueue: -1
+  m_CustomRenderQueue: 2000
   stringTagMap: {}
   disabledShaderPasses: []
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
     - _BumpSpecMap:
-        m_Texture: {fileID: 2800000, guid: 18e6751e2abfa23428ef946f6df94e68, type: 3}
+        m_Texture: {fileID: 2800000, guid: 34bf97c9a44d6a24e9aad37f9f1e5e3d, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: a7e4e66633823a845850fb5c7575e318, type: 3}
+        m_Texture: {fileID: 2800000, guid: f984fae445e929149af21237b556579a, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _TranslucencyMap:
-        m_Texture: {fileID: 2800000, guid: 4ce39a37c76b0f341a59318bafcf0cdc, type: 3}
+        m_Texture: {fileID: 2800000, guid: f61dbef0d12d35f4b9fbf8cfded48f9a, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
@@ -301,7 +301,7 @@ MonoBehaviour:
   m_Name: Tree Data
   m_EditorClassIdentifier: 
   _uniqueID: 173
-  materialHash: 55f76eb615b989158ee62a77edf11ec5215482368
+  materialHash: c19ea68072adc8e1b5bbf09b5a83f927215482368
   root:
     _uniqueID: 1
     seed: 2000
@@ -7252,7 +7252,7 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 114418}
   m_IsPrefabParent: 1
---- !u!136 &136781661169501404
+--- !u!136 &136929660707063544
 CapsuleCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -7261,7 +7261,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 1.5
+  m_Radius: 1
   m_Height: 20.464497
   m_Direction: 1
-  m_Center: {x: 0, y: 10.232248, z: 0}
+  m_Center: {x: 0, y: 0, z: 0}

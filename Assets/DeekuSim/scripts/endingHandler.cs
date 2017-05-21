@@ -9,7 +9,7 @@ public class endingHandler : MonoBehaviour {
   public Text scoreText;
 
 	void Start () {
-    scoreText.text = "Your score: " + DeekuSimData.playerScore.ToString("0.00");
+    scoreText.text = DeekuSimData.playerScore.ToString("0.00");
 	}
 
   void Update() {
