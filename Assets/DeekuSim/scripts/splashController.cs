@@ -10,11 +10,13 @@ public class splashController : MonoBehaviour {
   public int nextLevel;
   public float fadeInSpeed;
   public float fullLogoDelay;
+  public AudioSource splashAudio;
 
   private float currentBrightness;
   private float fullLogoVisibleSince;
-
+  private bool soundStarted;
 	void Start () {
+    soundStarted = false;
     image = gameObject.GetComponent ("RawImage") as RawImage;
     currentBrightness = 0f;
     fullLogoVisibleSince = 0f;
@@ -24,6 +26,10 @@ public class splashController : MonoBehaviour {
     if (currentBrightness < 1f) {
       currentBrightness += Time.deltaTime * fadeInSpeed;
     } else {
+      if (!soundStarted) {
+        soundStarted = true;
+        splashAudio.Play ();
+      }
       fullLogoVisibleSince += Time.deltaTime * 1000;
       if (fullLogoVisibleSince > fullLogoDelay) {
         SceneManager.LoadScene(nextLevel);
