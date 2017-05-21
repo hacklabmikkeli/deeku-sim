@@ -9,4 +9,8 @@ public class loadLevel : MonoBehaviour {
     SceneManager.LoadScene (index);
   }
 
+  public void ExitDeekuSim() {
+    Application.Quit();
+  }
+
 }
