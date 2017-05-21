@@ -2362,11 +2362,11 @@ MonoBehaviour:
   - {fileID: 4128159140251608, guid: 660ff78ccfc034e778a14c6459d24b72, type: 2}
   - {fileID: 4128159140251608, guid: da7bacb07916d41f9b791eea2d584684, type: 2}
   - {fileID: 4128159140251608, guid: 6a6333ce40f914dbfb71a8d764d3d9a4, type: 2}
-  spawnProbability: 50
-  spawnAttemptMinDelay: 200
-  spawnAttemptMaxDelay: 800
+  spawnProbability: 75
+  spawnAttemptMinDelay: 100
+  spawnAttemptMaxDelay: 550
   spawnMinDistance: 15
-  spawnMaxDistance: 25
+  spawnMaxDistance: 35
 --- !u!114 &114970542874324294
 MonoBehaviour:
   m_ObjectHideFlags: 1
