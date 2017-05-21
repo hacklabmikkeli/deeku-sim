@@ -53,6 +53,7 @@ public class playerMovement : MonoBehaviour {
 		rb = gameObject.GetComponent("Rigidbody") as Rigidbody;
     healthText = GameObject.FindGameObjectWithTag("healthText").GetComponent("Text") as Text;
     currentHealth = maxHealth;
+    Screen.lockCursor = true;
 	}
 	
 	void Update () {
@@ -64,6 +65,7 @@ public class playerMovement : MonoBehaviour {
 
     if (currentHealth <= 0) {
       DeekuSimData.playerScore = points;
+      Screen.lockCursor = false;
       SceneManager.LoadScene(nextLevel);
     }
 
