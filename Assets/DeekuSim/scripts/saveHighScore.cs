@@ -16,12 +16,16 @@ public class saveHighScore : MonoBehaviour {
   public Text inputText;
   public Text statusText;
 
+  private bool scoreSent;
+
   void Start () {
+    scoreSent = false;
   }
 
   public void saveHighscore() {
     string name = inputText.text;
-    if (!string.IsNullOrEmpty (name)) {
+    if (!string.IsNullOrEmpty (name) && !scoreSent) {
+      scoreSent = true;
       if(statusText != null) {
         statusText.text = "Saving";
       }

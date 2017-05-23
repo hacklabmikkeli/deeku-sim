@@ -11,6 +11,7 @@ public class gameOverKeyboardListener : MonoBehaviour {
   public InputField nameInput;
 
   private saveHighScore savehighScoreHandler;
+  private bool scoreSent;
 	// Use this for initialization
 	void Start () {
     savehighScoreHandler = gameObject.GetComponent ("saveHighScore") as saveHighScore;
