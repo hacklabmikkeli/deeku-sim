@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.4465782, g: 0.49641246, b: 0.5748167, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -509,7 +509,7 @@ GameObject:
   - component: {fileID: 726169153}
   - component: {fileID: 726169152}
   m_Layer: 5
-  m_Name: InputField
+  m_Name: playerName
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1225,6 +1225,7 @@ GameObject:
   - component: {fileID: 1446760191}
   - component: {fileID: 1446760190}
   - component: {fileID: 1446760192}
+  - component: {fileID: 1446760193}
   m_Layer: 0
   m_Name: ClickListener
   m_TagString: Untagged
@@ -1272,6 +1273,19 @@ MonoBehaviour:
   saveButton: {fileID: 823511230}
   inputText: {fileID: 689546926}
   statusText: {fileID: 1853421094}
+--- !u!114 &1446760193
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1446760189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60f5cfb89c304404ea73047d5f5b1168, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuSceneIndex: 1
+  nameInput: {fileID: 726169152}
 --- !u!1 &1618880821
 GameObject:
   m_ObjectHideFlags: 0

@@ -118,6 +118,7 @@ GameObject:
   - component: {fileID: 40425083}
   - component: {fileID: 40425082}
   - component: {fileID: 40425084}
+  - component: {fileID: 40425085}
   m_Layer: 0
   m_Name: Clicklistener
   m_TagString: Untagged
@@ -163,6 +164,18 @@ MonoBehaviour:
   highscoreServerUrl: https://deekusim.elemmings.fi/json
   highscoreText: {fileID: 424041885}
   highscorePanel: {fileID: 1171974202}
+--- !u!114 &40425085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 40425081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92ccc64a25ca3476db6dd85742510869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GameSceneIndex: 3
 --- !u!1 &68810869
 GameObject:
   m_ObjectHideFlags: 0
@@ -969,7 +982,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
